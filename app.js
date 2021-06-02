@@ -1,4 +1,4 @@
-var sqlite3 = require('sqlite3').verbose();
+//var sqlite3 = require('sqlite3').verbose();
 var express = require('express');
 var http = require('http');
 var path = require("path");
@@ -17,7 +17,7 @@ const limiter = rateLimit({
 });
 
 
-var db = new sqlite3.Database('./database/employees.db');
+//var db = new sqlite3.Database('./database/employees.db');
 
 
 app.use(bodyParser.urlencoded({extended: false}));
@@ -25,8 +25,8 @@ app.use(express.static(path.join(__dirname,'./public')));
 app.use(helmet());
 app.use(limiter);
 
-db.run('CREATE TABLE IF NOT EXISTS emp(id TEXT, name TEXT)');
-db.run('CREATE TABLE IF NOT EXISTS msg(name TEXT, tele TEXT, email TEXT, message TEXT)');  //new
+//db.run('CREATE TABLE IF NOT EXISTS emp(id TEXT, name TEXT)');
+//db.run('CREATE TABLE IF NOT EXISTS msg(name TEXT, tele TEXT, email TEXT, message TEXT)');  //new
 
 app.get('/', function(req,res){
   res.sendFile(path.join(__dirname,'./public/index.html'));
@@ -34,6 +34,7 @@ app.get('/', function(req,res){
 
 
 // Add
+/*
 app.post('/add', function(req,res){
   db.serialize(()=>{
     db.run('INSERT INTO emp(id,name) VALUES(?,?)', [req.body.empid, req.body.empname], function(err) {
@@ -122,7 +123,7 @@ app.get('/close', function(req,res){
   });
 
 });
-
+*/
 
 
 server.listen(3000, function(){
