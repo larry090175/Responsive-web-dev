@@ -1,5 +1,5 @@
 {
-  "name": "responsive-web-dev",
+  "name": "Snowdrifters",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/souvik-pl/Responsive-web-dev.git"
+    "url": "git+https://github.com/larry090175/Responsive-web-dev.git"
   },
-  "author": "Souvik",
+  "author": "Lawrence",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/souvik-pl/Responsive-web-dev/issues"
+    "url": "https://github.com/larry090175/Responsive-web-dev/issues"
   },
-  "homepage": "https://github.com/souvik-pl/Responsive-web-dev#readme",
+  "homepage": "https://github.com/larry090175/Responsive-web-dev#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
