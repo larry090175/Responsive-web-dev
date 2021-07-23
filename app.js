@@ -46,8 +46,8 @@ app.post('/pay', (req, res) => {
         "payment_method": "paypal"
     },
     "redirect_urls": {
-        "return_url": "http://www.mylawrences.com:3000/success",
-        "cancel_url": "http://www.mylawrences.com:3000/cancel"
+        "return_url": "http://ec2-3-93-3-46.compute-1.amazonaws.com:3000/success",
+        "cancel_url": "http://ec2-3-93-3-46.compute-1.amazonaws.com:3000/cancel"
     },
 	
     "transactions": [{
