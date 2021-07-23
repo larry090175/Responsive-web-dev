@@ -27,6 +27,7 @@
     "express": "^4.17.1",
     "express-rate-limit": "^5.2.6",
     "helmet": "^4.6.0",
+    "paypal-rest-sdk": "^1.8.1",
     "save": "^2.4.0",
     "save-dev": "0.0.1-security",
     "socket.io": "^2.4.1"
